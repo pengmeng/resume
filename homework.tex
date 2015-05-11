@@ -1,0 +1,124 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper, 11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+%Chinese support
+\usepackage{fontspec,xltxtra,xunicode}
+\setromanfont{SimSun}
+\XeTeXlinebreaklocale ``zh''
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage[textheight=8in,footskip=90pt]{geometry}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[R]{} % Empty center footer
+\fancyfoot[C]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{0pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{\UTF{6D4B}\UTF{8BD5}??} \\ [10pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.2cm] % Thin top horizontal rule
+\huge EECS 499 : Homework 4 \\ % The assignment title
+\horrule{0.5pt} \\[0.2cm] % Thick bottom horizontal rule
+}
+
+\author{Peng Meng} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Complete the calculations}
+\begin{tabbing}
+sample \hspace{4em} \= sample \hspace{2em} \= sample \hspace{2em} \= sample \hspace{4em} \= sample \hspace{2em} \= sample \kill
+Rule \> Support \> P(lhs) \> Confidence \> P(hrs) \> Lift \\
+\rule{36em}{0.5pt} \\
+If M then P \> 0.25 \> 0.45 \> 0.556 \> 0.425 \> 1.31 \\
+If P then M \> 0.25 \> 0.425 \> 0.588 \> 0.45 \> 1.31 \\
+If M then C \> 0.20 \> 0.45 \>  0.444 \> 0.40 \> 1.11 \\
+If C then M \> 0.20 \> 0.40 \> 0.500 \> 0.45 \> 1.11 \\
+If P then C \> 0.15 \> 0.425 \> 0.353 \> 0.40 \> 0.88 \\
+If C then P \> 0.15 \> 0.40 \> 0.375 \>0.425 \> 0.88\\
+If (M, P) then C \> 0.05 \> 0.25 \> 0.20 \> 0.40 \> 0.5 \\
+If (M, C) then P \> 0.05 \> 0.20 \> 0.25 \> 0.425 \> 0.5\\
+\end{tabbing}
+
+%\section{Lists}
+
+%------------------------------------------------
+
+%\subsection{Example of list (3*itemize)}
+%\begin{itemize}
+%	\item First item in a list 
+%		\begin{itemize}
+%		\item First item in a list 
+%			\begin{itemize}
+%			\item First item in a list 
+%			\item Second item in a list 
+%			\end{itemize}
+%		\item Second item in a list 
+%		\end{itemize}
+%	\item Second item in a list 
+%\end{itemize}
+
+%------------------------------------------------
+
+%\subsection{Example of list (enumerate)}
+%\begin{enumerate}
+%\item First item in a list 
+%\item Second item in a list 
+%\item Third item in a list
+%\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

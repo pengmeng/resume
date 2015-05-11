@@ -1,4 +1,9 @@
 #MAC system files
 .DS_Store
 
-
+#Latex
+*.log
+*.aux
+*.gz
+*.pdf
+*.synctex.gz
