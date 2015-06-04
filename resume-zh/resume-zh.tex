@@ -26,7 +26,7 @@
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 
 \name{孟芃} % Your name
-\address{Apt 3D, 2040 Sherman Ave \\ Evanston, IL 60201} % Your address
+\address{Apt 3D, 2040 Sherman Ave \\ Evanston, IL, USA 60201} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 \address{+1~(224)~$\cdot$~715~$\cdot$~4068 \\ peng.meng@u.northwestern.edu} % Your phone number and email
 \address{Github \\ github.com/pengmeng}
@@ -40,10 +40,10 @@
 \begin{rSection}{教育经历}
 
 {\large 西北大学 (Northwestern University)} \hfill {\em 2014年9月至今} \\ 
-计算机科学专业~~~~硕士学位 \\
-GPA: 3.9/4.0\\[0.5em]
+计算机科学专业~~~~硕士学位~~~~
+GPA: 3.9/4.0\\[0.3em]
 {\large 北京科技大学} \hfill {\em 2010年9月 - 2014年6月} \\ 
-计算机科学与技术专业~~~~学士学位 \\
+计算机科学与技术专业~~~~学士学位~~~~
 GPA: 3.7/4.0
 \end{rSection}
 
@@ -56,33 +56,32 @@ GPA: 3.7/4.0
 \begin{rSubsection}{网络爬虫框架}{2015年3月 - 至今}{开发者}{西北大学，美国}
 \item 将之前编写的JAVA社交网络爬虫框架移植到Python，实现为一般化的网络爬虫框架
 \item 基于Python语言特性实现了高度可定制性和可扩展性
-\item 基于Eventlet库实现的高并发爬行模块提高了爬行效率
 \item 编写了简单的基于MongoDB的ORM模块实现数据持久化
 \end{rSubsection}
 
-
-\begin{rSubsection}{自然语言处理项目}{2015年2月 - 2015年3月}{主要开发者}{西北大学，美国}
-\item 设计实现了金球奖相关推特数据的解析程序
-\item 完成了获奖者、颁奖者、最佳着装等关键信息的提取和分析
-\item 设计实现了Allrecipe网站菜单数据的解析程序
-\item 完成了基于关键字或URL的菜单数据的抓取和分析以及不同类型菜单之间的转换
-\item 基于Flask框架实现了程序的web应用
+\begin{rSubsection}{分布式哈希表Kademlia}{2015年3月 - 2015年6月}{主要开发者}{西北大学，美国}
+\item 使用Go语言实现了分布式哈希表Kademlia以及Vanish数据自毁系统
+\item 负责Kademlia路由表的设计与实现以及系统主要功能的开发
+\item 负责模拟多节点环境测试用例的编写
 \end{rSubsection}
 
+\begin{rSubsection}{股票分析项目}{2015年3月 - 2015年6月}{开发者}{西北大学，美国}
+\item 使用上述爬虫框架编写了获取华尔街时报特定关键词新闻标题的爬虫系统
+\item 分析某个时间段内新闻标题的数量和该公司股票交易量之间的关系
+\item 对新闻标题进行情感分析并挖掘其与公司股票价格的关系
+\end{rSubsection}
+
+\begin{rSubsection}{自然语言处理项目}{2015年2月 - 2015年3月}{主要开发者}{西北大学，美国}
+\item 设计实现了金球奖相关推特数据以及Allrecipe网站菜单数据的解析程序
+\item 负责金球奖获奖者、颁奖者、最佳着装等关键信息的提取和分析
+\item 负责基于关键字或URL的菜单数据的抓取和分析以及不同类型菜单之间的转换
+\item 负责基于Flask框架的web应用的开发
+\end{rSubsection}
 
 \begin{rSubsection}{智能家居系统}{2013年5月 - 2013年7月}{主要开发者}{北京科技大学，北京}
 \item 设计实现了使用智能手机通过Wi-Fi网络控制家用电器的智能家居系统
-\item 完成了树莓派平台JAVA语言主控程序的开发以及手机与控制端通讯协议的设计
-\item 系统实现了手动控制、语音控制和自动控制
+\item 负责树莓派平台JAVA语言主控程序的开发以及手机与控制端通讯协议的设计
 \item 该系统获得了全国物联网大赛北京赛区一等奖
-\end{rSubsection}
-
-
-\begin{rSubsection}{简易 RESTful BaaS 服务}{2013年3月 - 2013年7月}{项目负责人、开发者}{北京科技大学，北京}
-\item 带领团队完成了遵循RESTful标准的简易BaaS服务的设计与实现
-\item 系统提供了用户管理、数据存取等服务，支持JAVA、C\#两种语言
-\item 负责JAVA语言和C\#语言本地组件的开发
-\item 完成了本地组件API文档的编写
 \end{rSubsection}
 
 \end{rSection}
@@ -94,7 +93,7 @@ GPA: 3.7/4.0
 \begin{rSection}{专业技能}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-编程语言 & Python, JAVA; Common Lisp, Go, R\\
+编程语言 & Python, JAVA; Go, Common Lisp, C\\
 数据库 & MongoDB, Redis, MySQL \\
 其他工具 & Vim, Git, Latex, Weka
 \end{tabular}
