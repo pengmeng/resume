@@ -22,66 +22,67 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
 
 \name{Peng Meng} % Your name
-\address{Apt 3D, 2040 Sherman Ave \\ Evanston, IL, USA 60201} % Your address
+\address{1454 Birchmeadow Ln, San Jose, CA 95131 \\ (224)~$\cdot$~715~$\cdot$~4068} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{+1~(224)~$\cdot$~715~$\cdot$~4068 \\ peng.meng@u.northwestern.edu} % Your phone number and email
-\address{Github \\ github.com/pengmeng}
+\address{pengmeng2015@u.northwestern.edu \\ github.com/pengmeng} % Your phone number and email
+%\address{Github \\ }
 
 \begin{document}
-
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
-{\bf University of Northwestern} \hfill {\em September 2014 - Present} \\ 
+{\bf Northwestern University} \hfill {\em September 2014 - December 2015} \\ 
 Master in Computer Science~~~~
-GPA: 3.9/4.0\\
+GPA: 3.81/4.0\\
+Courses: Machine Learning, Distributed Systems, Natural Language Processing, Data Mining (Weka)\\
 {\bf University of Science and Technology Beijing} \hfill {\em September 2010 - June 2014} \\ 
 B.S. in Computer Science~~~~
-GPA: 3.7/4.0
+GPA: 3.64/4.0
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Experience}
+\begin{rSection}{Work Experience}
+\begin{rSubsection}{Intern at Baidu Beijing}{July 2015 - September 2015}{Research and Development Intern}{Baidu, China}
+\item Work in Baidu Index group, in charge of data processing, product upgrade and maintenance
+\item Complete data processing job for several special data topics using Python, Perl and Hadoop
+\item Upgrade one module mining related query words based on user query log in the next generation product
+\end{rSubsection}
+\end{rSection}
 
-\begin{rSubsection}{Network Crawler Framework}{March 2015 - Present}{Developer}{Northwestern University, USA}
-\item Refactor a previous JAVA social network crawler framework with Python
-\item Implement high scalability and customizability based on Python features
-\item Implement simple ORM module based on MongoDB for data persistence
+\begin{rSection}{Project Experience}
+
+\begin{rSubsection}{Stock Analysis Project - Machine Learning}{September 2015 - December 2015}{Developer}{Northwestern University, USA}
+\item Implement a web crawler that downloads Wall Street Journal news from an education database
+\item Analyse the relation between number and sentiment of titles and stock trading volume and price
+\item Analyse the sentiment of news using Recurrent Neural Network algorithm
 \end{rSubsection}
 
-\begin{rSubsection}{Kademlia DHT}{March 2015 - June 2015}{Lead Developer}{Northwestern University, USA}
+\begin{rSubsection}{Kademlia Distributed Hash Table - Distributed System}{March 2015 - June 2015}{Lead Developer}{Northwestern University, USA}
 \item Implement Kademlia Distributed Hash Table and Vanish-like self-destructing data system using Golang
-\item In charge of the design and implementation of Kademlia routing table and development of system's main functions
-\item In charge of writing test cases for multi-node environment simulating
+\item Design and implement Kademlia routing table and distributing algorithm in Vanish-like system
+\item Write test cases for multi-node environment simulating
 \end{rSubsection}
 
-\begin{rSubsection}{Stock Analysis Project}{March 2015 - June 2015}{Developer}{Northwestern University, USA}
-\item Implement a crawler system for fetching news titles from WSJ with given keyword using framework mentioned above
-\item Analyse the relation between number of news titles and company's stock trading volume
-\item Analyse sentiment of news titles and its relation with company's stock price
-\end{rSubsection}
-
-\begin{rSubsection}{Natural Language Process Project}{February 2015 - March 2015}{Lead Developer}{Northwestern University, USA}
-\item Design and implement program that analyses twitter data about Golden Global Prize and data from Allrecipe website
+\begin{rSubsection}{Natural Language Processing Project}{February 2015 - March 2015}{Lead Developer}{Northwestern University, USA}
+\item Implement program that analyses twitter data about Golden Global Prize and Allrecipe website data
 \item In charge of extraction and analysis of key data like Winner, Presenter and Best Dressed
-\item In charge of recipe data crawling based on key word or url and transformation among recipes
-\item In charge of development of web application based on Flask framework
+\item Responsible for recipe data crawling based on key word or url and transformation among recipes
+\item Develop a tiny web application based on Flask framework
 \end{rSubsection}
 
-
-\begin{rSubsection}{Intelligent Home System}{May 2013 - July 2013}{Lead Developer}{USTB, Beijing}
-\item Design a system that control the household appliances by smart phones via Wi-Fi
-\item In charge of the programming of the control terminal on Raspberry-Pi using JAVA
-\item Granted the $1^{st}$ prize in Beijing Section of International Contest of Application in Internet of Things
+\begin{rSubsection}{Web Crawler Framework - Personal Project}{March 2015 - Present}{Developer}{Northwestern University, USA}
+\item Design and implement a scalable and customizable python web crawler framework
+\item Implement several general crawler modules like scraper with cookie and different types of frontier
+\item Design and implement pythonic Redis interfaces based on redis-py for frontier implementation
 \end{rSubsection}
 
 \end{rSection}
@@ -95,7 +96,7 @@ GPA: 3.7/4.0
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Computer Languages & Python, JAVA; Go, Common Lisp, C\\
 Databases & MongoDB, Redis, MySQL \\
-Tools & Vim, Git, Latex, Weka
+Tools & Hadoop, Vim, Git, Latex, Weka
 \end{tabular}
 
 \end{rSection}
