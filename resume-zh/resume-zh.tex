@@ -23,13 +23,12 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
 
-\name{孟芃} % Your name
-\address{Apt 3D, 2040 Sherman Ave \\ Evanston, IL, USA 60201} % Your address
+\name{孟~芃} % Your name
+\address{1454 Birchmeadow Ln, San Jose, CA 95131 \\ +1 2247154068 \\ +86 15201441959} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{+1~(224)~$\cdot$~715~$\cdot$~4068 \\ peng.meng@u.northwestern.edu} % Your phone number and email
-\address{Github \\ github.com/pengmeng}
+\address{pengmeng2015@u.northwestern.edu \\ github.com/pengmeng \\ pengmeng.me}
 
 \begin{document}
 
@@ -39,49 +38,51 @@
 
 \begin{rSection}{教育经历}
 
-{\large 西北大学 (Northwestern University)} \hfill {\em 2014年9月至今} \\ 
+{\large 西北大学 (Northwestern University)} \hfill {\em 2014年9月 - 2015年12月} \\
 计算机科学专业~~~~硕士学位~~~~
-GPA: 3.9/4.0\\[0.3em]
-{\large 北京科技大学} \hfill {\em 2010年9月 - 2014年6月} \\ 
+GPA: 3.81/4.0\\
+核心课程：机器学习、分布式系统、自然语言处理、数据挖掘 (Weka)\\[0.3em]
+{\large 北京科技大学} \hfill {\em 2010年9月 - 2014年6月} \\
 计算机科学与技术专业~~~~学士学位~~~~
-GPA: 3.7/4.0
+GPA: 3.64/4.0
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
+\begin{rSection}{工作经历}
+\begin{rSubsection}{百度北京实习}{2015年7月 - 2015年9月}{研发实习生}{百度，北京}
+\item 就职于百度指数，负责数据处理、分析以及产品的升级和维护
+\item 使用Python，Perl，Hadoop等技术完成了多个数据专题的数据处理工作并成功上线
+\item 完成下一代产品中基于用户检索日志挖掘关联检索词模块的优化和升级，将该模块运行效率提升一倍
+\end{rSubsection}
+\end{rSection}
 
 \begin{rSection}{项目经历}
 
-\begin{rSubsection}{网络爬虫框架}{2015年3月 - 至今}{开发者}{西北大学，美国}
-\item 将之前编写的JAVA社交网络爬虫框架移植到Python，实现为一般化的网络爬虫框架
-\item 基于Python语言特性实现了高度可定制性和可扩展性
-\item 编写了简单的基于MongoDB的ORM模块实现数据持久化
-\end{rSubsection}
-
 \begin{rSubsection}{分布式哈希表Kademlia}{2015年3月 - 2015年6月}{主要开发者}{西北大学，美国}
-\item 使用Go语言实现了分布式哈希表Kademlia以及Vanish数据自毁系统
-\item 负责Kademlia路由表的设计与实现以及系统主要功能的开发
-\item 负责模拟多节点环境测试用例的编写
+\item 基于Go语言实现了分布式哈希表Kademlia类库，并基于该库开发了Vanish数据自毁系统
+\item 负责Kademlia系统中路由表的设计与实现以及系统核心功能的开发
+\item 负责系统单元测试、模拟多节点环境测试的编写
 \end{rSubsection}
 
-\begin{rSubsection}{股票分析项目}{2015年3月 - 2015年6月}{开发者}{西北大学，美国}
-\item 使用上述爬虫框架编写了获取华尔街时报特定关键词新闻标题的爬虫系统
-\item 分析某个时间段内新闻标题的数量和该公司股票交易量之间的关系
-\item 对新闻标题进行情感分析并挖掘其与公司股票价格的关系
+\begin{rSubsection}{股票分析项目}{2015年3月 - 2015年6月}{主要开发者}{西北大学，美国}
+\item 设计实现了从教育数据库抓取华尔街时报新闻的爬虫系统，支持根据关键词和时间范围抓取
+\item 统计和分析了新闻数量、新闻标题情感和股票交易量、股票价格趋势之间的关系
+\item 基于递归神经网络算法（Recurrent Neural Network）对新闻全文进行情感分析
 \end{rSubsection}
 
 \begin{rSubsection}{自然语言处理项目}{2015年2月 - 2015年3月}{主要开发者}{西北大学，美国}
-\item 设计实现了金球奖相关推特数据以及Allrecipe网站菜单数据的解析程序
-\item 负责金球奖获奖者、颁奖者、最佳着装等关键信息的提取和分析
-\item 负责基于关键字或URL的菜单数据的抓取和分析以及不同类型菜单之间的转换
-\item 负责基于Flask框架的web应用的开发
+\item 分别设计实现了金球奖相关Twitter数据、Allrecipe网站菜单数据的解析程序
+\item 成功从金球奖Twitter数据中提取出获奖者、颁奖者、最佳着装等关键信息
+\item 完成了支持关键字检索和URL检索的菜单抓取程序、并根据给定规则对菜单进行语义转换
+\item 使用Flask框架开发了简单的菜单分析Web应用
 \end{rSubsection}
 
-\begin{rSubsection}{智能家居系统}{2013年5月 - 2013年7月}{主要开发者}{北京科技大学，北京}
-\item 设计实现了使用智能手机通过Wi-Fi网络控制家用电器的智能家居系统
-\item 负责树莓派平台JAVA语言主控程序的开发以及手机与控制端通讯协议的设计
-\item 该系统获得了全国物联网大赛北京赛区一等奖
+\begin{rSubsection}{网络爬虫框架}{2015年3月 - 至今}{开发者}{西北大学，美国}
+\item 设计实现了一个可扩展可定制的Python网络爬虫框架，开源于Github
+\item 实现了多个基本的爬虫组件，例如支持Cookie的抓取器和不同类型的URL队列模块
+\item 基于redis-py包开发了支持Python数据对象方法的Redis数据库接口，用于URL队列的实现
 \end{rSubsection}
 
 \end{rSection}
@@ -95,7 +96,7 @@ GPA: 3.7/4.0
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 编程语言 & Python, JAVA; Go, Common Lisp, C\\
 数据库 & MongoDB, Redis, MySQL \\
-其他工具 & Vim, Git, Latex, Weka
+其他工具 & Hadoop, Vim, Git, Latex, Weka
 \end{tabular}
 
 \end{rSection}
@@ -103,12 +104,6 @@ GPA: 3.7/4.0
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-%Section content\ldots
-
-%\end{rSection}
 
 %----------------------------------------------------------------------------------------
 
